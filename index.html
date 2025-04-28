@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Cakes & Bakes</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" href="./Assets/Alogocakeshop.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="./Assets/Alogocakeshop.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Special">Special</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#footer">Order</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user">
+                    <input type="checkbox" id="signin-toggle" class="signin-checkbox">
+                    <div class="signin-popup">
+                        <div class="popup-content">
+                            <label for="signin-toggle" class="close-btn">&times;</label>
+                            <h2>SIGN IN</h2>
+                            <form id="signin-form" action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                                <div class="form-options">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="remember" name="remember">
+                                        <label for="remember">Remember me</label>
+                                    </div>
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                </div>
+                                <button type="submit" class="signin-btn">Sign In</button>
+                                <div class="signup-link">
+                                    <p>Don't have an account? <a href="#">Sign Up</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="main-text">
+                <h1><span>Welcome</span><br>to our Cake Shop!</h1>
+                <p>Welcome to AG Cakes & Bakes, where every cake tells a story of love and joy! Indulge in our
+                    handcrafted creations made just for you. Savor the sweetness in every bite and make every occasion
+                    memorable with our exquisite cakes.
+                </p>
+                <div class="btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+            <div class="first-image">
+                <img src="./Assets/Bimage4.png" alt="cake image">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------About---------------->
+
+    <div class="about" id="About">
+        <div class="main-about">
+            <div class="image">
+                <img src="./Assets/CRed-Velvet-Cupcake-removebg-preview.png" alt="cupcakes">
+            </div>
+            <div class="text-about">
+                <h1><span>About us</span></h1>
+                <h3>Why choose us?</h3>
+                <p>Choosing AG Cakes & Bakes means choosing unparalleled quality and personalized service. Our expert
+                    bakers and decorators are dedicated to creating cakes that not only look stunning but also taste
+                    extraordinary. We pride ourselves on our attention to detail, exceptional customer service, and a
+                    wide range of customizable options to make your vision come to life. Whether it's a birthday,
+                    wedding, or any special celebration, our commitment to excellence ensures that your moments are made
+                    sweeter with our delightful creations. Experience the difference with Sweet Delights, where every
+                    cake is a celebration of flavor and craftsmanship.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- Animation -------------->
+
+    <div class="trust">
+        <div class="fssai">
+            <h3> <i class="fa-solid fa-face-grin-stars"></i> FSSAI Certified</h3>
+            <p>Our shop is 5 star certified by FSSAI for hygiene and food quality.</p>
+        </div>
+        <div class="preservatives">
+            <h3> <i class="fa-solid fa-face-grin-wide"></i> No Preservatives</h3>
+            <p>We bake fresh cakes that don’t have any added preservatives to increase the shelf life.</p>
+        </div>
+        <div class="delivery">
+            <h3><i class="fa-solid fa-face-grin-hearts"></i> Safe Delivery</h3>
+            <p>Our cakes are made in sanitized kitchens and safely packed for doorstep delivery.</p>
+        </div>
+    </div>
+
+    <!----------------- banner------------------>
+
+    <div class="banner">
+        <i class="fa-solid fa-cake-candles symbol"></i>
+        <h1>Cakes are baked with Love!</h1>
+        <i class="fa-regular fa-heart symbol"></i>
+    </div>
+
+    <!--------------------Menu--------------------->
+
+    <div class="menu" id="Menu">
+        <h1>Our Menu</h1>
+        <h4><span>Choose Your Cake Flavours</span></h4>
+        <div class="menu-box">
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/1chocotruffle.webp" alt="Chocolate Truffle Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Chocolate Truffle Cake</h2>
+                    <p>500 g | Rich Chocolate Cakes | Designer Truffle Cakes </p>
+                    <h3>₹ 680</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/2butterscotchcream.webp" alt="Butterscotch Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Butterscotch Cake</h2>
+                    <p>500 g | Rich, creamy, caramel-flavored delight.</p>
+                    <h3>₹ 650</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/3BlackForestCake.webp" alt="Black Forest Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Black Forest Cake</h2>
+                    <p>500 g | Decadent layers of chocolate, cream, cherries, bliss.</p>
+                    <h3>₹ 560</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/4GulabJamunCake.webp" alt="Gulab Jamun Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Gulab Jamun Cake</h2>
+                    <p>500 g | Rich, cardamom-flavored cake with syrupy Gulab Jamun.</p>
+                    <h3>₹ 650</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/5RasmalaiCake.jpg" alt="Rasmalai Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Rasmalai Cake</h2>
+                    <p>500 g | Saffron Rasmalai Cake with a nutty twist—pure bliss.</p>
+                    <h3>₹ 750</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/6CheeseCake.avif" alt="Cheese Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Cheese Cake</h2>
+                    <p>1 Kg | Creamy, rich cheesecake with a buttery crust and blueberry delight.</p>
+                    <h3>₹ 1,300</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/7Vanilla.jpg" alt="Vanilla Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Vanilla Cake</h2>
+                    <p>500 g | Moist, fluffy vanilla cake—pure delight for any occasion.</p>
+                    <h3>₹ 460</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/8WhiteForest.webp" alt="White Forest Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>White Forest Cake</h2>
+                    <p>500 g | Vanilla, white chocolate, cherries, creamy and delightful.</p>
+                    <h3>₹ 560</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/9PinataCakeNew.webp" alt="Pinata Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Pinata cake</h2>
+                    <p>1 kg | Break the cake, reveal joy's hidden treasure.</p>
+                    <h3>₹ 1650</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/10RedVelvet.png" alt="Red Velvet Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Red Velvet Cake</h2>
+                    <p>1 Kg | Moist red velvet cake with rich cream cheese frosting perfection.</p>
+                    <h3>₹ 1,350</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/11DoubleFlavourCake.webp" alt="Double Flavours Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Double Flavour Cake</h2>
+                    <p>500 g | Personalized double flavour cake: two favorite tastes.</p>
+                    <h3>₹ 560</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/12GardenFontant.png" alt="Fondant Cakes">
+                </div>
+                <div class="menu-info">
+                    <h2>Fondant Cake</h2>
+                    <p>1 Kg | Artfully crafted, a slice of perfection in taste.</p>
+                    <h3>₹ 1750</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/13JellyCake.jpg" alt="Fresh Fruit Jelly Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Fresh Fruit Jelly Cake</h2>
+                    <p>1 Kg | Fresh, vibrant, fruity, colorful, refreshing, delicious, delightful.</p>
+                    <h3>₹ 1450</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/14PlumCake.webp" alt="Plum Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Plum Cake</h2>
+                    <p>1 KG | Rich, spiced, fruity, dense, festive, nutty, moist.</p>
+                    <h3>₹ 1250</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/15Pineapplecake.jpg" alt="Pineapple Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Pineapple Cake</h2>
+                    <p>500 g | Pineapple taste, tropical sweetness, moist, tender delight.</p>
+                    <h3>₹ 520</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cart">
+                <div class="menu-image">
+                    <img src="./Assets/EMenu/16strawberry.jpg" alt="Strawberry Cake">
+                </div>
+                <div class="menu-info">
+                    <h2>Strawberry Cake</h2>
+                    <p>1 Kg | Blissful layers of strawberry delight, a sweet embrace in every slice.</p>
+                    <h3>₹ 1100</h3>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------- Special --------->
+
+    <div class="special" id="Special">
+        <h1>Our Special</h1>
+        <div class="image-box">
+            <div class="special-image">
+                <img src="./Assets/FBirthdayCake.jpg" alt="Birthday Cakes" class="image-special">
+                <h3>Custom Birthday Cakes</h3>
+                <p>Celebrate your special day with our custom-designed birthday cakes! Choose your favorite flavors, theme, and
+                    decorations. We'll create a masterpiece that makes your celebration unforgettable.</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+            <div class="special-image">
+                <img src="./Assets/GWeddingCake.webp" alt="Wedding Cakes" class="image-special">
+                <h3>Custom Wedding Cakes</h3>                
+                <p>Make your wedding day even more magical with our elegant wedding cakes. Each tier is crafted with precision and
+                    decorated with intricate details to match your wedding theme and style.</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+            <div class="special-image">
+                <img src="./Assets/HBrowniesTower.webp" alt="Gourmet Brownies" class="image-special">
+                <h3>Gourmet Brownies</h3>
+                <p>Indulge in our rich, fudgy brownies made with premium Belgian chocolate. Available in classic, walnut, caramel swirl,
+                    and mint varieties. Perfect for any chocolate lover's craving!</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+            <div class="special-image">
+                <img src="./Assets/IDreamCake.webp" alt="Dream Cakes" class="image-special">
+                <h3>Dream Cakes</h3>
+                <p>Experience pure bliss with our signature Dream Cakes featuring light-as-air sponge, cloud-like mousse, and delicate
+                    flavor combinations. Each bite is designed to transport you to dessert heaven.</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+            <div class="special-image">
+                <img src="./Assets/JFusionDessert.jpg" alt="Fusion Desserts" class="image-special">
+                <h3>Fusion Desserts</h3>
+                <p>Experience the best of both worlds with our fusion desserts that blend traditional Indian sweets with modern cake
+                    techniques. Our Gulab Jamun and Rasmalai cakes are customer favorites!</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+            <div class="special-image">
+                <img src="./Assets/KDietarySpecialCake.jpg" alt="Dietary Special" class="image-special">
+                <h3>Dietary Special</h3>
+                <p>Catering to all dietary needs with our range of eggless, sugar-free, gluten-free, and vegan cake options. Enjoy
+                    delicious treats without compromising on your dietary requirements.</p>
+                <div class="special-btn">
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------Review----------->
+    <div class="review" id="Review">
+        <div class="header">
+            <h1>Customer Review</h1>
+        </div>
+
+        <div class="testimonials">
+            <div class="card">
+                <span><i class="fa-solid fa-quote-left"></i></span>
+                <p>
+                    Absolutely delightful! The cakes from this shop are always fresh, delicious, and beautifully
+                    decorated. My go-to place for every celebration!
+                </p>
+                <hr>
+                <img src="./Assets/Lwomenprofile.png" alt="Review 1">
+                <div class="name">Sarah M.</div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="card">
+                <span><i class="fa-solid fa-quote-left"></i></span>
+                <p>
+                    Every cake I've ordered here has been a hit with my family and friends. The flavors are amazing, and
+                    the service is top-notch. Highly recommend!
+                </p>
+                <hr>
+                <img src="./Assets/Mmenprofile.png" alt="Review 2">
+                <div class="name">James L.</div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="card">
+                <span><i class="fa-solid fa-quote-left"></i></span>
+                <p>
+                    I’m always impressed with the quality and creativity of the cakes. The team here truly knows how to
+                    make any occasion special. Thank you!
+                </p>
+                <hr>
+                <img src="./Assets/Mmenprofile.png" alt="Review 3">
+                <div class="name">Timothy T.</div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="card">
+                <span><i class="fa-solid fa-quote-left"></i></span>
+                <p>
+                    A fantastic cake shop with an incredible variety of flavors. The cakes are not only delicious but
+                    also visually stunning. Will definitely order again!
+                </p>
+                <hr>
+                <img src="./Assets/Lwomenprofile.png" alt="Review 4">
+                <div class="name">Ruth A.</div>
+            </div>
+        </div>
+
+        <p class="more-reviews"><a href="#">&#8658; Click here to read more reviews</a></p>
+
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about-section">
+                <div class="logo-footer">
+                    <img src="./Assets/Alogocakeshop.png" alt="AG Cakes & Bakes Logo">
+                </div>
+                <p>Delighting taste buds since 1997, AG Cakes & Bakes offers handcrafted cakes and pastries made with love and premium ingredients.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jabayazhini-ag/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Menu">Our Menu</a></li>
+                    <li><a href="#Special">Special Offers</a></li>
+                    <li><a href="#Review">Testimonials</a></li>
+                    <li><a href="#footer">Order Now</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact" id="Order">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> 123, Gandhi Market, Trichy, Tamil Nadu, IN 620008.</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 97123 45678</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@agcakesandbakes.com</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+    
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 AG Cakes & Bakes. All Rights Reserved | Designed with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
