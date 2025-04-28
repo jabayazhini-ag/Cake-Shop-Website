@@ -1,6 +1,7 @@
 # 🍰 AG Cakes & Bakes
 
 Welcome to **AG Cakes & Bakes** — a delightful cake shop website designed to bring sweetness to every occasion!  
+
 Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, custom orders, special offers, customer reviews, and a user-friendly ordering experience.
 
 ## 🖥️ Live Demo
@@ -36,23 +37,23 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
   ```
 
 ## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jabayazhini-ag/Cake-Shop-Website.git
+ 1. Clone the repository:
+    ```bash
+    git clone https://github.com/jabayazhini-ag/Cake-Shop-Website.git
 
-2. Open `index.html` in your browser.
+ 2. Open `index.html` in your browser.
 
-3. Explore the sweet experience!
+ 3. Explore the sweet experience!
 
----
+ ---
 
-Take a moment to explore the live project and source code. Your insights and feedback are most welcome.
+ Take a moment to explore the live project and source code. Your insights and feedback are most welcome.
 
----
+ ---
 
-**Crafted by Jabayazhni G** 💻✨
+ **Crafted by Jabayazhni G** 💻✨
 
-**LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
-**GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
-**Gmail:** jabayazhiniag@gmail.com
+ **LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
+ **GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
+ **Gmail:** jabayazhiniag@gmail.com
 
