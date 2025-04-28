@@ -23,7 +23,17 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 
 ## 📋 Folder Structure
 
-```├── index.html ├── style.css ├── Assets/ │ ├── Logo │ ├── Menu Images │ ├── Special Cakes Images │ ├── Review Profiles │ └── Banner Image```
+
+```AG-Cakes-and-Bakes/
+├── index.html
+├── style.css
+├── Assets/
+│   ├── Alogocakeshop.png
+│   ├── EMenu/ (Menu Images)
+│   ├── Special Cakes Images
+│   ├── Review Profiles
+│   └── Banner Image```
+
 
 
 ## 🚀 How to Run
