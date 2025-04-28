@@ -45,17 +45,17 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 
  3. Explore the sweet experience!
 
-   ---
+ ---
 
-   Take a moment to explore the live project and source code. Your insights and feedback are most welcome.
+ Take a moment to explore the live project and source code. Your insights and feedback are most welcome.
 
-   ---
+  ---
 
-   **Crafted by Jabayazhni G** 💻✨
+  **Crafted by Jabayazhni G** 💻✨
 
-   **LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
+  **LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
  
-   **GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
+  **GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
  
-   **Gmail:** jabayazhiniag@gmail.com
+  **Gmail:** jabayazhiniag@gmail.com
 
