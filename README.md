@@ -24,7 +24,7 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 ## 📋 Folder Structure
 
 
-```AG-Cakes-and-Bakes/
+AG-Cakes-and-Bakes/
 ├── index.html
 ├── style.css
 ├── Assets/
@@ -32,7 +32,7 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 │   ├── EMenu/ (Menu Images)
 │   ├── Special Cakes Images
 │   ├── Review Profiles
-│   └── Banner Image```
+│   └── Banner Image
 
 
 
