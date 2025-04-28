@@ -23,7 +23,7 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 
 ## 📋 Folder Structure
 
-├── index.html ├── style.css ├── Assets/ │ ├── Logo │ ├── Menu Images │ ├── Special Cakes Images │ ├── Review Profiles │ └── Banner Image
+```├── index.html ├── style.css ├── Assets/ │ ├── Logo │ ├── Menu Images │ ├── Special Cakes Images │ ├── Review Profiles │ └── Banner Image```
 
 
 ## 🚀 How to Run
