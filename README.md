@@ -23,19 +23,17 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 
 ## 📋 Folder Structure
 
-```
-AG-Cakes-and-Bakes/
-├── index.html
-├── style.css
-├── Assets/
-│   ├── Alogocakeshop.png
-│   ├── EMenu/ (Menu Images)
-│   ├── Special Cakes Images
-│   ├── Review Profiles
-│   └── Banner Image
-```
-
-
+  ```
+  AG-Cakes-and-Bakes/
+  ├── index.html
+  ├── style.css
+  ├── Assets/
+  │   ├── logocakeshop.png
+  │   ├── Menu/ (Menu Images)
+  │   ├── Special Cakes Images
+  │   ├── Review Profiles
+  │   └── Banner Image
+  ```
 
 ## 🚀 How to Run
 1. Clone the repository:
@@ -46,7 +44,9 @@ AG-Cakes-and-Bakes/
 
 3. Explore the sweet experience!
 
-Feel free to explore the live project and source code. Your feedback is appreciated!
+---
+
+Take a moment to explore the live project and source code. Your insights and feedback are most welcome.
 
 ---
 
