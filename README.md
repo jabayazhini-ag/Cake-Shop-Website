@@ -54,6 +54,8 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
  **Crafted by Jabayazhni G** 💻✨
 
  **LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
+ 
  **GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
+ 
  **Gmail:** jabayazhiniag@gmail.com
 
