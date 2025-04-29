@@ -22,7 +22,7 @@ section nav{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     background-color: white;
-    height: 95px;  /* Added fixed height to the navbar */
+    height: 97px;  /* Added fixed height to the navbar */
 }
 
 section nav .logo img{
@@ -765,13 +765,13 @@ section .btn a:hover{
 }
 
 #Special {
-    scroll-margin-top: 95px; /* Replace 95px with your nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
+    scroll-margin-top: 100px; /* Replace 95px with your nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
 }
 
 /* ---------Review---------- */
 
 #Review {
-    scroll-margin-top: 90px; /* Replace 90px with your nav bar's height */
+    scroll-margin-top: 95px; /* Replace 90px with your nav bar's height */
 }
 
 .review{
