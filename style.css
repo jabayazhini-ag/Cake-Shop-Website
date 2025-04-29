@@ -14,7 +14,7 @@ section{
 
 section nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     left: 0;
@@ -22,13 +22,14 @@ section nav{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     background-color: white;
+    height: 95px;  /* Added fixed height to the navbar */
 }
 
 section nav .logo img{
     width: 80px;
     height: 80px;
     cursor: pointer;
-    margin: 5px 0;
+    margin: 8px 0 5px 7.5rem;
     border-radius: 50px;
     border: 1px solid darkgoldenrod;
 }
@@ -37,6 +38,9 @@ section nav .logo img:hover{
     box-shadow: 0 0 3px 2px rgba(184, 135, 11, 0.732);
 }
 
+.icon {
+    margin-right: 7rem;
+}
 section nav ul{
     list-style: none;
 }
@@ -162,7 +166,8 @@ section nav .icon .fa-user {
     color: navy;
     text-align: center;
     margin-bottom: 25px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -238,7 +243,7 @@ section nav .icon .fa-user {
     cursor: pointer;
     transition: 0.3s;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 23px;
 }
 
 .signin-btn:hover {
@@ -358,6 +363,7 @@ section .btn a:hover{
     height: 100vh;
     padding: 10px 0;
     line-height: 45px;
+    margin-top: auto;
 }
 
 .main-about{
@@ -408,8 +414,7 @@ section .btn a:hover{
 
 .trust{
     display: flex;
-    margin: 7% 4%;
-    margin-bottom: 2%;
+    margin: 7% 4% 0 4%;
     background-image: linear-gradient(180deg, rgba(184, 135, 11, 0.789), rgba(0, 0, 128, 0.773));
     color: navy;
     gap: 5%;
@@ -494,9 +499,7 @@ section .btn a:hover{
     background-size: cover;
     min-height: 60vh;
     z-index: -1;
-    margin-top: 9%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 7% 4% 1% 4%;    
     border: 1px solid white;
     box-shadow: 0 2px 4px 3px rgba(0, 0, 128, 0.763);  
     display: flex;
@@ -533,6 +536,7 @@ section .btn a:hover{
 .menu{
     width: 100%;
     padding: 100px 0;
+    margin-top: auto;
 }
 
 .menu h1{
@@ -660,7 +664,8 @@ section .btn a:hover{
 
 .special{
     width: 100%;
-    padding: 20px 1%;
+    padding: 2px 1%;
+    margin-top: auto;    
 }
 
 .special h1{
@@ -671,7 +676,7 @@ section .btn a:hover{
     color: darkgoldenrod;
     margin-left: 15px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 5%;
+    margin-bottom: 3rem;
 }
 
 .image-box{
@@ -733,7 +738,7 @@ section .btn a:hover{
 }
 
 .image-special:hover{
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .special-btn{
@@ -759,7 +764,15 @@ section .btn a:hover{
     box-shadow: 0 0 3px 2px rgba(184, 135, 11, 0.732);
 }
 
+#Special {
+    scroll-margin-top: 95px; /* Replace 95px with your nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
+}
+
 /* ---------Review---------- */
+
+#Review {
+    scroll-margin-top: 90px; /* Replace 90px with your nav bar's height */
+}
 
 .review{
     width: 100%;
@@ -767,7 +780,8 @@ section .btn a:hover{
     margin: auto;
     padding: 1rem;
     text-align: center;  
-    margin-top: 50px;
+    margin-top: 65px;
+    margin-bottom: 40px;
 }
 
 .header{
@@ -844,13 +858,14 @@ section .btn a:hover{
 
 .more-reviews {
     text-align: center;
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: 42px;
+    font-size: 21px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: navy;
 }
 
 .more-reviews a {
-    color: darkgoldenrod; 
+    color: navy; 
     text-decoration: none; 
     font-weight: bold; 
     transition: all 0.3s ease; /* Smooth transition for all properties */
@@ -859,8 +874,25 @@ section .btn a:hover{
 
 .more-reviews a:hover {
     text-decoration: dotted underline; 
-    color: rgba(0, 0, 128, 0.91);   
+    color: darkgoldenrod;   
     transform: translateX(5px); /* Move 5px to the right on hover */  
+}
+
+/* ----- Marquee Tag -------- */
+
+.marquee-container {
+    background-color: rgba(184, 135, 11, 0.711); 
+    color: navy;
+    padding: 10px 0;
+    margin-bottom: 20px; 
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+marquee {
+    width: 100%; /* Make the marquee take the full width */
 }
 
 /* ------ Footer Section -------- */
@@ -868,7 +900,7 @@ section .btn a:hover{
 footer {
     background-color: white;
     padding: 50px 0 20px;
-    border-top: 5px solid darkgoldenrod;
+    border-top: 5px solid navy;
     margin-top: 50px;
 }
 
@@ -876,7 +908,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;    
 }
 
@@ -887,8 +919,8 @@ footer {
 }
 
 .about-section .logo-footer img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 15px;
     border: 1px solid darkgoldenrod;
@@ -896,7 +928,7 @@ footer {
 
 .about-section p {
     color: navy;
-    line-height: 24px;
+    line-height: 25px;
     margin-bottom: 20px;
 }
 
@@ -986,6 +1018,7 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     font-size: 15px;
+    margin-top: 12px;
 }
 
 input::placeholder {
@@ -1004,15 +1037,30 @@ input::placeholder {
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-    border-top: 1px solid rgba(0, 0, 128, 0.2);
+    border-top: 2px solid rgba(0, 0, 128, 0.2);
 }
 
 .footer-bottom p {
     color: navy;
 }
 
-.footer-bottom i {
+.footer-bottom span {
     color: darkgoldenrod;
+}
+
+.footer-bottom i {
+    color: lightskyblue;
+}
+
+.footer-bottom a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: navy;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -1022,38 +1070,43 @@ input::placeholder {
     }
 }
 
+.whatsapp-chat {
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px; /* Reduced padding */
+    border-radius: 50%; /* Make it circular */
+    z-index: 1000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
+.whatsapp-chat i {
+    font-size: 24px;
+}
 
+.whatsapp-chat span {
+    display: none; /* Hidden for extra safety, but not needed now */
+}
 
+.whatsapp-chat:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Optional: Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .whatsapp-chat {
+        bottom: 60px;
+        right: 10px;
+        padding: 10px; /* Further reduced padding for small screens */
+    }
+    .whatsapp-chat i {
+        font-size: 20px;
+    }
+}
