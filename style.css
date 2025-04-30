@@ -1113,19 +1113,35 @@ input::placeholder {
 @media screen and (max-width: 768px) {
     .footer-content {
         display: block;
+        margin-bottom: 40px;
+        margin-top: 2px;
     }
 
     .footer-section {
         width: 100%;
         /* Full width on small screens */
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         margin-right: 0;
         /* Reset margins */
     }
 
-    .about-section {
+    .about-section, .links, .contact, .newsletter {
         text-align: center;
         /* Center the about section on small screens */
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+        /* Center the underline on small screens */
+    }
+
+    .links ul li {
+        margin-bottom: 8px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
     }
 }
 
@@ -1164,7 +1180,7 @@ input::placeholder {
 /* Optional: Responsive adjustments */
 @media screen and (max-width: 600px) {
     .whatsapp-chat {
-        bottom: 70px;
+        bottom: 98px;
         right: 10px;
         padding: 10px;
         /* Further reduced padding for small screens */
@@ -1175,45 +1191,51 @@ input::placeholder {
     }
 }
 
-/* --- Responsive adjustments for Navbar --- */
+/* Media Query for Small Screens (Horizontal and Compact) */
+
 @media screen and (max-width: 768px) {
 
-    /* Medium screens and below (tablets) */
     section nav {
-        flex-direction: column;
-        /* Stack logo, menu, icons */
         height: auto;
-        /* Adjust height as needed */
-        padding: 10px 0;
+        /* Allow height to adjust */
+        padding: 5px 0;
+        /* Reduced vertical padding */
     }
 
     section nav .logo img {
-        margin: 10px 0;
-        /* Center logo */
+        width: 50px;
+        height: 50px;
+        margin-left: 1.5px;
+        /* Reduced left margin */
     }
 
     section nav ul {
-        flex-direction: column;
-        /* Stack menu items */
-        text-align: center;
+        /* Keep flex-direction: row; for horizontal */
+        margin: 0 0.2rem;
+        /* Reduced horizontal margin */
+        padding: 0;
     }
 
     section nav ul li {
-        margin: 5px 0;
+        margin: 0 2px;
+        /* Reduced horizontal spacing between items */
+    }
+
+    section nav ul li a {
+        font-size: 14px;
+        /* Smaller font size for menu items */
     }
 
     section nav .icon {
-        margin: 10px 0 10px 0;
-        /* center icons */
+        margin-right: 1.5px;
+        /* Reduced right margin */
     }
-}
 
-@media screen and (max-width: 480px) {
-
-    /* Small screens (phones) */
     section nav .icon i {
-        margin: 0 5px;
-        /* Adjust icon spacing on very small screens */
+        font-size: 16px;
+        /* Smaller icon size */
+        margin: 0 3px;
+        /* Reduced horizontal spacing for icons */
     }
 }
 
@@ -1344,7 +1366,7 @@ input::placeholder {
         flex-direction: column;
         padding: 10% 2%;
         margin: 10% 4% 1% 4%;
-        line-height: 3;
+        line-height: 1.5;
     }
 
     .banner h1 {
@@ -1372,7 +1394,7 @@ input::placeholder {
     }
 
     .menu-cart {
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -1408,14 +1430,14 @@ input::placeholder {
         /* Adjust paragraph width */
         font-size: 0.9rem;
         /* Reduce paragraph font size */
-        margin-top: 50px;
+        margin-top: 80px;
         text-align: justify;
         padding: 0 10px;
         /* Add some padding for better readability */
     }
 
     .special-btn {
-        margin-top: 200px;
+        margin-top: 280px;
         /* Adjust button position */
         padding: 5px 15px;
     }
