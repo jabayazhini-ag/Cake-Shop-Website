@@ -1113,8 +1113,8 @@ input::placeholder {
 @media screen and (max-width: 768px) {
     .footer-content {
         display: block;
-        margin-bottom: 40px;
-        margin-top: 2px;
+        margin-bottom: 30px;
+        margin-top: 1px;
     }
 
     .footer-section {
@@ -1125,9 +1125,14 @@ input::placeholder {
         /* Reset margins */
     }
 
-    .about-section, .links, .contact, .newsletter {
+    .about-section, .contact {
         text-align: center;
         /* Center the about section on small screens */
+    }
+
+    .links, .newsletter  {
+        display: none;
+        /* Hide quick links on smaller screens */
     }
 
     .footer-section h3::after {
@@ -1348,14 +1353,26 @@ input::placeholder {
     .trust {
         flex-direction: column;
         align-items: center;
-        margin: 10% 4% 0 4%;
+        margin: 10% 3% 0 3%;
         padding: 10%;
     }
 
     .trust div {
-        width: 90%;
-        margin-bottom: 20px;
-        margin-top: 30px;
+        width: 85%;
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+
+    .trust h3 {
+        font-size: 1rem;
+    }
+    
+    .trust i {
+        font-size: 1rem;
+    }
+    
+    .trust p {
+        font-size: 0.9rem;
     }
 }
 
@@ -1381,12 +1398,17 @@ input::placeholder {
 /* --- Menu Section Media Queries --- */
 
 @media screen and (max-width: 768px) {
+    .menu {
+        padding: 80px 0;
+    }
+
     .menu h1 {
         font-size: 2.5rem;
     }
 
     .menu h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        text-wrap: nowrap;
     }
 
     .menu-box {
@@ -1395,12 +1417,24 @@ input::placeholder {
 
     .menu-cart {
         width: 95%;
+        height: 520px;        
+    }
+
+    .menu-image {
+        width: 300px;
+        height: 245px;
+        margin: 0 auto;
+        overflow: hidden;
     }
 }
 
 /* -----------Special Section Media Queries----------- */
 
 @media screen and (max-width: 768px) {
+    .special {
+        padding: 0px 1%;
+    }
+
     .special h1 {
         font-size: 2.5rem;
         /* Reduce the heading size */
@@ -1415,14 +1449,27 @@ input::placeholder {
     .special-image {
         margin: 10px auto;
         /* Center the items with auto margins */
-        width: 90%;
+        width: 100%;
         /* Make each item take up more width */
+        height: 450px; /* Set a fixed height for all special-image divs */
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        position: relative; /* Ensure position relative for absolute child positioning */
+    }
+
+    .image-special {
+        height: 250px; /* Fixed height for all images */
+        width: 100%;
+        object-fit: cover; /* Ensure proper image scaling */
+        object-position: center;
     }
 
     .special-image h3 {
         font-size: 1.5rem;
         /* Reduce the sub-heading size */
-        margin-bottom: 100px;
+        margin-bottom: 60px;
+        position: absolute;
+        top: 100px; /* Position from top */
     }
 
     .special-image p {
@@ -1430,21 +1477,38 @@ input::placeholder {
         /* Adjust paragraph width */
         font-size: 0.9rem;
         /* Reduce paragraph font size */
-        margin-top: 80px;
+        margin-top: 75px;
         text-align: justify;
         padding: 0 10px;
         /* Add some padding for better readability */
+        position: absolute;
+        top: 80px; /* Position from top */
     }
 
     .special-btn {
         margin-top: 280px;
         /* Adjust button position */
         padding: 5px 15px;
+        position: absolute;
+        bottom: 85px; /* Position from bottom instead of using margin-top */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
     }
 
     .special-btn a {
         font-size: 0.9rem;
         /* Reduce button text size */
+    }
+
+    /* Make sure all hover states are visible on mobile */
+    .special-image h3,
+    .special-image p,
+    .special-btn {
+        opacity: 1; /* Always visible on mobile */
+    }
+    
+    .image-special {
+        opacity: 0.2; /* Make all images semi-transparent for mobile */
     }
 }
 
@@ -1461,7 +1525,7 @@ input::placeholder {
     }
 
     .review .header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         /* Reduced heading size */
         margin-bottom: 1.5rem;
         /* Reduced bottom margin */
@@ -1483,7 +1547,7 @@ input::placeholder {
         /* Allow height to adjust */
         padding: 15px;
         /* Reduced padding */
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         /* Spacing between cards */
     }
 
@@ -1524,9 +1588,10 @@ input::placeholder {
     }
 
     .more-reviews {
-        margin-top: 20px;
+        margin-top: 40px;
         /* Adjusted top margin */
         font-size: 1rem;
         /* Reduced font size */
+        margin-bottom: 25px;
     }
 }
