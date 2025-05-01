@@ -13,8 +13,10 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
 - Special pop-up Sign-In form using pure HTML & CSS
 - Custom cake flavors and detailed menu cards
 - Customer testimonials and quick order links
+- WhatsApp live chat integration for real-time customer interaction
+- Media Queries are used throughout the CSS for seamless mobile responsiveness
 - Mobile-friendly and clean layout
-- Smooth hover effects and minimalistic animations
+- Smooth hover effects and subtle animations using keyframes and transitions
 
 ## 📂 Built With
 - HTML5
