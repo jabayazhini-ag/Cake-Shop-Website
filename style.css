@@ -1597,14 +1597,17 @@ input::placeholder {
 }
 
 /* ------ Navigation Bar ------------- */
+
 /* Hamburger Menu Icon (initially hidden) */
 .menu-icon {
     display: none;
     color: navy;
     font-size: 25px;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 16px;
     transition: 0.3s;
+    position: absolute;
+    left: 150px; /* Position after the logo */
 }
 
 .menu-icon:hover {
@@ -1637,8 +1640,8 @@ input::placeholder {
 @media screen and (max-width: 992px) {
     section nav .logo img {
         margin-left: 2rem;
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 75px;
     }
     
     section nav .icon {
@@ -1672,8 +1675,8 @@ input::placeholder {
     
     section nav .logo img {
         margin: 0;
-        width: 60px;
-        height: 60px;
+        width: 65px;
+        height: 65px;
     }
     
     section nav .icon {
@@ -1729,8 +1732,8 @@ input::placeholder {
     }
     
     section nav .logo img {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
     
     section nav ul {
@@ -1776,8 +1779,8 @@ input::placeholder {
     }
     
     section nav .logo img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
     }
     
     /* Show only user icon and cart icon on very small screens */
