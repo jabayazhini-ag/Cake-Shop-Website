@@ -30,6 +30,7 @@ Crafted using **HTML5** and **CSS3**, this project showcases handcrafted cakes, 
   AG-Cakes-and-Bakes/
   ├── index.html
   ├── style.css
+  ├── README.md
   ├── Assets/
   │   ├── logocakeshop.png
   │   ├── Menu/ (Menu Images)
