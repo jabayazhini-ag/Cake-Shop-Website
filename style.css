@@ -1179,13 +1179,14 @@ input::placeholder {
 @media screen and (max-width: 768px) {
 
     section nav {
-        height: auto;                   /* Allow height to adjust */
-        padding: 5px 0;                 /* Reduced vertical padding */
+        /*height: auto;                   Allow height to adjust */
+        height: 100px;
+        padding: 12px 0;                 /* Reduced vertical padding */
     }
 
     section nav .logo img {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         margin-left: 1.5px;             /* Reduced left margin */
     }
 
@@ -1225,6 +1226,18 @@ input::placeholder {
     .forgot-password {
         margin-bottom: 5px;
     }
+}
+
+@media screen and (max-width: 348px) {    
+        section nav {
+            height: 100px;     
+            padding: 10px 0; 
+        }
+    
+        section nav .logo img {
+            width: 80px;
+            height: 80px;
+        }    
 }
 
 /* --- Responsive adjustments for Form --- */
