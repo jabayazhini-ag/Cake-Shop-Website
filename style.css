@@ -1557,7 +1557,7 @@ input::placeholder {
 
     .more-reviews {
         margin-top: 40px;        /* Adjusted top margin */       
-        font-size: 1rem;        /* Reduced font size */        
+        font-size: 1.1rem;        /* Reduced font size */        
         margin-bottom: 25px;
     }
 }
