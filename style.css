@@ -723,7 +723,7 @@ section .btn a:hover {
 .special-image h3 {
     position: absolute;
     font-size: 35px;
-    margin-bottom: 135px;
+    margin-bottom: 220px;
     color: navy;
     z-index: 4;
     opacity: 0;
@@ -738,7 +738,7 @@ section .btn a:hover {
 .special-image p {
     position: absolute;
     width: 400px;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: justify;
     color: darkgoldenrod;
     line-height: 23px;
@@ -746,7 +746,7 @@ section .btn a:hover {
     z-index: 5;
     transition: 0.3s;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 19px;
     padding: 0 2px;
 }
 
@@ -755,12 +755,12 @@ section .btn a:hover {
 }
 
 .image-special:hover {
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 .special-btn {
     position: absolute;
-    margin-top: 225px;
+    margin-top: 270px;
     background: navy;
     padding: 7px 25px;
     opacity: 0;
@@ -773,6 +773,7 @@ section .btn a:hover {
     text-decoration: none;
     color: #000;
     color: bisque;
+    font-weight: 500;
 }
 
 .special-image:hover .special-btn {
@@ -1483,6 +1484,7 @@ input::placeholder {
         margin-bottom: 60px;
         position: absolute;
         top: 100px;                 /* Position from top */
+        text-shadow: #FC0 1px 0 10px;
     }
 
     .special-image p {
