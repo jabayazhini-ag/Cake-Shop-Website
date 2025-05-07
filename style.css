@@ -1239,6 +1239,16 @@ input::placeholder {
         margin: 0 3px;
         /* Reduced horizontal spacing for icons */
     }
+
+    .forgot-password {
+        margin-left: 65px;
+    }
+
+    .remember-me {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
 }
 
 /* --- Responsive adjustments for Form --- */
@@ -1253,7 +1263,13 @@ input::placeholder {
     }
 
     .forgot-password {
+        margin-left: 65px;
+    }
+
+    .remember-me {
+        margin-bottom: 10px;
         margin-top: 10px;
+        margin-left: 65px;
     }
 }
 
