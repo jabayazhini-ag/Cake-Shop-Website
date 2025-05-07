@@ -1263,13 +1263,13 @@ input::placeholder {
     }
 
     .forgot-password {
-        margin-left: 70px;
+        margin-left: 80px;
     }
 
     .remember-me {
         margin-bottom: 10px;
         margin-top: 10px;
-        margin-left: 70px;
+        margin-left: 80px;
     }
 }
 
