@@ -784,14 +784,13 @@ section .btn a:hover {
 
 #Special {
     scroll-margin-top: 105px;
-    /* Replace 100px with your nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
+    /* Replace 100px with our nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
 }
 
 /* ---------Review---------- */
 
 #Review {
-    scroll-margin-top: 95px;
-    /* Replace 95px with your nav bar's height */
+    scroll-margin-top: 95px;        /* Replace 95px with our nav bar's height */    
 }
 
 .review {
@@ -888,17 +887,14 @@ section .btn a:hover {
     color: navy;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
-    /* Smooth transition for all properties */
-    display: inline-block;
-    /* Make it inline-block for padding */
+    transition: all 0.3s ease;          /* Smooth transition for all properties */    
+    display: inline-block;               /* Make it inline-block for padding */
 }
 
 .more-reviews a:hover {
     text-decoration: dotted underline;
     color: darkgoldenrod;
-    transform: translateX(5px);
-    /* Move 5px to the right on hover */
+    transform: translateX(5px);         /* Move 5px to the right on hover */
 }
 
 /* ----- Marquee Tag -------- */
@@ -915,8 +911,7 @@ section .btn a:hover {
 }
 
 marquee {
-    width: 100%;
-    /* Make the marquee take the full width */
+    width: 100%;                    /* Make the marquee take the full width */    
 }
 
 /* ------ Footer Section -------- */
@@ -933,28 +928,22 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1350px;
-    margin: 0 auto;
-    /* Center the footer content */
+    margin: 0 auto;                     /* Center the footer content */
 }
 
 .footer-section.links,
 .footer-section.contact {
-    flex: 0 1 auto;
-    /* Don't grow, don't shrink, auto width */
-    width: auto;
-    /* Let content determine width */
-    margin: 0;
-    /* Reset margins */
+    flex: 0 1 auto;                     /* Don't grow, don't shrink, auto width */
+    width: auto;                        /* Let content determine width */
+    margin: 0;                           /* Reset margins */
 }
 
 .footer-section.about-section {
-    flex: 1 1 300px;
-    /* Example: Allow some growth, start at 300px */
+    flex: 1 1 300px;                    /* Example: Allow some growth, start at 300px */
 }
 
 .footer-section.newsletter {
-    flex: 1 1 300px;
-    /* Example: Allow some growth, start at 300px */
+    flex: 1 1 300px;                    /* Example: Allow some growth, start at 300px */
 }
 
 .footer-section {
@@ -1116,27 +1105,22 @@ input::placeholder {
     }
 
     .footer-section {
-        width: 100%;
-        /* Full width on small screens */
+        width: 100%;                /* Full width on small screens */
         margin-bottom: 5px;
-        margin-right: 0;
-        /* Reset margins */
+        margin-right: 0;            /* Reset margins */
     }
 
     .about-section, .contact {
-        text-align: center;
-        /* Center the about section on small screens */
+        text-align: center;         /* Center the about section on small screens */
     }
 
     .links, .newsletter  {
-        display: none;
-        /* Hide quick links on smaller screens */
+        display: none;              /* Hide quick links on smaller screens */
     }
 
     .footer-section h3::after {
         left: 50%;
-        transform: translateX(-50%);
-        /* Center the underline on small screens */
+        transform: translateX(-50%);         /* Center the underline on small screens */
     }
 
     .links ul li {
@@ -1156,10 +1140,8 @@ input::placeholder {
     color: white;
     display: flex;
     align-items: center;
-    padding: 12px;
-    /* Reduced padding */
-    border-radius: 50%;
-    /* Make it circular */
+    padding: 12px;                      /* Reduced padding */
+    border-radius: 50%;                 /* Make it circular */
     z-index: 1000;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -1171,8 +1153,7 @@ input::placeholder {
 }
 
 .whatsapp-chat span {
-    display: none;
-    /* Hidden for extra safety, but not needed now */
+    display: none;                  /* Hidden for extra safety, but not needed now */
 }
 
 .whatsapp-chat:hover {
@@ -1185,8 +1166,7 @@ input::placeholder {
     .whatsapp-chat {
         bottom: 98px;
         right: 10px;
-        padding: 10px;
-        /* Further reduced padding for small screens */
+        padding: 10px;              /* Further reduced padding for small screens */
     }
 
     .whatsapp-chat i {
@@ -1199,46 +1179,37 @@ input::placeholder {
 @media screen and (max-width: 768px) {
 
     section nav {
-        height: auto;
-        /* Allow height to adjust */
-        padding: 5px 0;
-        /* Reduced vertical padding */
+        height: auto;                   /* Allow height to adjust */
+        padding: 5px 0;                 /* Reduced vertical padding */
     }
 
     section nav .logo img {
         width: 50px;
         height: 50px;
-        margin-left: 1.5px;
-        /* Reduced left margin */
+        margin-left: 1.5px;             /* Reduced left margin */
     }
 
     section nav ul {
         /* Keep flex-direction: row; for horizontal */
-        margin: 0 0.2rem;
-        /* Reduced horizontal margin */
+        margin: 0 0.2rem;               /* Reduced horizontal margin */
         padding: 0;
     }
 
     section nav ul li {
-        margin: 0 2px;
-        /* Reduced horizontal spacing between items */
+        margin: 0 2px;                  /* Reduced horizontal spacing between items */
     }
 
     section nav ul li a {
-        font-size: 14px;
-        /* Smaller font size for menu items */
+        font-size: 14px;                /* Smaller font size for menu items */
     }
 
     section nav .icon {
-        margin-right: 1.5px;
-        /* Reduced right margin */
+        margin-right: 1.5px;                    /* Reduced right margin */
     }
 
     section nav .icon i {
-        font-size: 16px;
-        /* Smaller icon size */
-        margin: 0 3px;
-        /* Reduced horizontal spacing for icons */
+        font-size: 16px;                        /* Smaller icon size */
+        margin: 0 3px;                          /* Reduced horizontal spacing for icons */
     }
 
     .form-options {
@@ -1287,8 +1258,7 @@ input::placeholder {
     }
 
     section .main .main-text {
-        order: 2;
-        /* Put text below image on smaller screens */
+        order: 2;                       /* Put text below image on smaller screens */
     }
 
     section .main .first-image {
@@ -1507,19 +1477,18 @@ input::placeholder {
     }
 
     .special-btn a {
-        font-size: 0.9rem;
-        /* Reduce button text size */
+        font-size: 0.9rem;              /* Reduce button text size */
     }
 
     /* Make sure all hover states are visible on mobile */
     .special-image h3,
     .special-image p,
     .special-btn {
-        opacity: 1;         /* Always visible on mobile */
+        opacity: 1;                     /* Always visible on mobile */
     }
     
     .image-special {
-        opacity: 0.2;       /* Make all images semi-transparent for mobile */
+        opacity: 0.2;                   /* Make all images semi-transparent for mobile */
     }
 }
 
@@ -1527,59 +1496,59 @@ input::placeholder {
 
 @media screen and (max-width: 768px) {
     .review {
-        margin-top: 30px;           /* Adjusted top margin */
-        margin-bottom: 20px;         /* Adjusted bottom margin */
-        padding: 0.5rem;         /* Reduced padding */
+        margin-top: 30px;                   /* Adjusted top margin */
+        margin-bottom: 20px;                /* Adjusted bottom margin */
+        padding: 0.5rem;                    /* Reduced padding */
     }
 
     .review .header h1 {
-        font-size: 2.2rem;         /* Reduced heading size */
-        margin-bottom: 1.5rem;         /* Reduced bottom margin */
+        font-size: 2.2rem;                   /* Reduced heading size */
+        margin-bottom: 1.5rem;              /* Reduced bottom margin */
     }
 
     .testimonials {
-        width: 100%;         /* Take full width */
-        margin: 20px 0;         /* Adjusted margins */
-        display: block;         /* Change display to block */
+        width: 100%;                        /* Take full width */
+        margin: 20px 0;                     /* Adjusted margins */
+        display: block;                     /* Change display to block */
 
     }
 
     .card {
-        width: 100%;         /* Full width for cards */
-        height: auto;         /* Allow height to adjust */
-        padding: 15px;         /* Reduced padding */
-        margin-bottom: 25px;         /* Spacing between cards */
+        width: 100%;                        /* Full width for cards */
+        height: auto;                       /* Allow height to adjust */
+        padding: 15px;                      /* Reduced padding */
+        margin-bottom: 25px;                /* Spacing between cards */
 
     }
 
     .card p {
-        font-size: 0.9rem;         /* Reduced paragraph font size */
-        margin-bottom: 15px;         /* Adjusted bottom margin */
-        text-align: left;         /* Aligned text to the left */
+        font-size: 0.9rem;                  /* Reduced paragraph font size */
+        margin-bottom: 15px;                /* Adjusted bottom margin */
+        text-align: left;                   /* Aligned text to the left */
 
     }
 
     .card hr {
-        width: 80%;                 /* Wider hr */
-        margin-bottom: 15px;         /* Adjusted bottom margin */
+        width: 80%;                         /* Wider hr */
+        margin-bottom: 15px;                /* Adjusted bottom margin */
     }
 
     .card img {
-        width: 60px;            /* Smaller image */
-        height: 60px;               /* Smaller image */
-        margin-bottom: 8px;             /* Adjusted bottom margin */
+        width: 60px;                        /* Smaller image */
+        height: 60px;                       /* Smaller image */
+        margin-bottom: 8px;                  /* Adjusted bottom margin */
     }
 
     .name {
-        font-size: 1rem;            /* Reduced name font size */
-        white-space: nowrap;            /* Prevent wrapping */
-        overflow: hidden;               /* Hide overflow */
+        font-size: 1rem;                    /* Reduced name font size */
+        white-space: nowrap;                /* Prevent wrapping */
+        overflow: hidden;                   /* Hide overflow */
         text-overflow: ellipsis;            /* Ellipsis for overflow */
     }
 
     .more-reviews {
-        margin-top: 40px;        /* Adjusted top margin */       
-        font-size: 1.1rem;        /* Reduced font size */        
+        margin-top: 40px;                   /* Adjusted top margin */       
+        font-size: 1.1rem;                  /* Reduced font size */        
         margin-bottom: 25px;
     }
 }
@@ -1597,8 +1566,8 @@ input::placeholder {
     transition: 0.3s;
     /* position: absolute; */
     position: relative;
-    order: -1;                  /* ensures it appears before logo in flex layout */
-    /* left: 165px;                    Position after the logo */
+    order: -1;                              /* ensures it appears before logo in flex layout */
+    /* left: 165px;                         Position after the logo */
 }
 
 .bar-icon:hover {
@@ -1610,7 +1579,7 @@ input::placeholder {
     display: none;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design - Navigation Bar */
 
 /* Large tablets and small desktops */
 @media screen and (max-width: 1200px) {
