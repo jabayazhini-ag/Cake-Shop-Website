@@ -266,7 +266,7 @@ section nav .icon .fa-user {
 /* --------- Sign Up Link --------- */
 .signup-link {
     text-align: center;
-    margin-top: 20px;
+    margin: 30px 0 10px 0; 
 }
 
 .signup-link p {
