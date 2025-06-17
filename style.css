@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------- Section Navigation Bar ------------- */
+
 section {
     /* height: 100vh; */
     width: 100%;
@@ -90,7 +94,7 @@ section nav .icon i:hover {
     color: darkgoldenrod;
 }
 
-/* ---- CSS Pop-up Form ----- */
+/* ---- Navigation Bar --- CSS Pop-up Sign In Form ----- */
 
 /* ---- Change user icon to be container and clickable --- */
 section nav .icon .fa-user {
@@ -168,7 +172,7 @@ section nav .icon .fa-user {
     transform: rotate(90deg);
 }
 
-/* -------- Form Styling -------- */
+/* -------- Sign In Form Styling -------- */
 .popup-content h2 {
     color: navy;
     text-align: center;
@@ -284,7 +288,31 @@ section nav .icon .fa-user {
     text-decoration: underline;
 }
 
-/* ------ Main Section ---------- */
+/* -------------- Hamburger Menu Icon (initially hidden) ---------------- */
+.bar-icon {
+    display: none;
+    color: navy;
+    font-size: 25px;
+    cursor: pointer;
+    /* margin-right: 15px; */
+    margin-left: 15px;
+    transition: 0.3s;
+    /* position: absolute; */
+    position: relative;
+    order: -1;                              /* ensures it appears before logo in flex layout */
+    /* left: 165px;                         Position after the logo */
+}
+
+.bar-icon:hover {
+    color: darkgoldenrod;
+}
+
+/* Menu checkbox (for mobile toggle) */
+#menu-toggle {
+    display: none;
+}
+
+/* ------ Main Welcome Section ---------- */
 
 section .main {
     display: flex;
@@ -366,6 +394,8 @@ section .btn a:hover {
     color: navy;
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
 /* -------------About us------------- */
 .about {
     width: 100%;
@@ -419,6 +449,8 @@ section .btn a:hover {
     text-align: justify;
     font-size: 115%;
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
 
 /* ------Animation--------- */
 
@@ -506,6 +538,8 @@ section .btn a:hover {
     border-bottom-right-radius: 50px;
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
 /* ----------Banner------------ */
 
 .banner {
@@ -545,6 +579,8 @@ section .btn a:hover {
     -webkit-text-fill-color: maroon;
     text-shadow: #FC0 1px 0 10px;
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
 
 /* -----------Menu------------- */
 
@@ -675,6 +711,8 @@ section .btn a:hover {
     box-shadow: 0 0 3px 2px rgba(184, 135, 11, 0.732);
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
 /* -----------------Special------------------- */
 
 .special {
@@ -793,6 +831,8 @@ section .btn a:hover {
     /* Replace 100px with our nav bar's height For Eg: If 85px, Nav height (80px) + 5px. This adds a 5px gap below the nav bar.*/
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
 /* ---------Review---------- */
 
 #Review {
@@ -903,6 +943,8 @@ section .btn a:hover {
     transform: translateX(5px);         /* Move 5px to the right on hover */
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+
 /* ----- Marquee Tag -------- */
 
 .marquee-container {
@@ -919,6 +961,8 @@ section .btn a:hover {
 marquee {
     width: 100%;                    /* Make the marquee take the full width */    
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
 
 /* ------ Footer Section -------- */
 
@@ -1103,41 +1147,6 @@ input::placeholder {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    .footer-content {
-        display: block;
-        margin-bottom: 30px;
-        margin-top: 1px;
-    }
-
-    .footer-section {
-        width: 100%;                /* Full width on small screens */
-        margin-bottom: 5px;
-        margin-right: 0;            /* Reset margins */
-    }
-
-    .about-section, .contact {
-        text-align: center;         /* Center the about section on small screens */
-    }
-
-    .links, .newsletter  {
-        display: none;              /* Hide quick links on smaller screens */
-    }
-
-    .footer-section h3::after {
-        left: 50%;
-        transform: translateX(-50%);         /* Center the underline on small screens */
-    }
-
-    .links ul li {
-        margin-bottom: 8px;
-    }
-
-    .contact-info p {
-        margin-bottom: 10px;
-    }
-}
-
 .whatsapp-chat {
     position: fixed;
     bottom: 75px;
@@ -1167,20 +1176,11 @@ input::placeholder {
     opacity: 0.9;
 }
 
-/* Optional: Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .whatsapp-chat {
-        bottom: 98px;
-        right: 10px;
-        padding: 10px;              /* Further reduced padding for small screens */
-    }
+/* ------------------------------------------------------------------------------------------------------------- */
 
-    .whatsapp-chat i {
-        font-size: 20px;
-    }
-}
+/* --------------- Media Queries ---------------- */
 
-/* Media Query for Small Screens (Horizontal and Compact) */
+/* --------------- Navigation Bar ----------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -1235,18 +1235,19 @@ input::placeholder {
 }
 
 @media screen and (max-width: 348px) {    
-        section nav {
-            height: 100px;     
-            padding: 10px 0; 
-        }
+    section nav {
+        height: 100px;     
+        padding: 10px 0; 
+    }
     
-        section nav .logo img {
-            width: 80px;
-            height: 80px;
-        }    
+    section nav .logo img {
+        width: 80px;
+        height: 80px;
+    }    
 }
 
-/* --- Responsive adjustments for Form --- */
+/* ------------ Sign In Form Navigation Bar ------------- */
+
 @media screen and (max-width: 480px) {
     .popup-content {
         padding: 15px;
@@ -1267,338 +1268,6 @@ input::placeholder {
         margin-left: 70px;
     }
 }
-
-/* --- Home Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    section .main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    section .main .main-text {
-        order: 2;                       /* Put text below image on smaller screens */
-    }
-
-    section .main .first-image {
-        order: 1;
-        margin-bottom: 20px;
-    }
-
-    section .main .first-image img {
-        width: 90%;
-        height: auto;
-        left: 0;
-    }
-
-    section .main .main-text h1 {
-        font-size: 2rem;
-        left: 0;
-    }
-
-    section .main .main-text p {
-        width: 90%;
-        margin: 20px auto;
-        font-size: 20px;
-    }
-
-    section .btn {        
-        padding: 10px 8px;       
-    }
-
-    section .btn {
-        margin: 20px auto;
-    }
-
-}
-
-/* --- About Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    .about {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .main-about {
-        flex-direction: column;
-    }
-
-    .main-about .image img {
-        width: 90%;
-        height: auto;
-        top: 0;
-        margin-top: 60px;
-        margin-bottom: 10px;
-    }
-
-    .text-about {
-        order: 2;
-        padding: 20px;
-    }
-
-    .text-about h1 {
-        font-size: 50px;
-    }    
-
-    .text-about p {
-        width: 100%;
-        margin-right: 0;
-        margin-top: 10px;
-        text-align: justify;
-        font-size:  105%
-    }
-
-    section .btn a {        
-        font-size: 18px;
-    }
-}
-
-/* --- Animation Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    .trust {
-        flex-direction: column;
-        align-items: center;
-        margin: 10% 4% 0 4%;
-        padding: 10%;
-        overflow: hidden;
-    }
-
-    .trust div {
-        width: 85%;
-        margin-bottom: 35px;
-        margin-top: 35px;
-    }
-
-    .trust h3 {
-        font-size: 1rem;
-    }
-    
-    .trust i {
-        font-size: 1rem;
-    }
-    
-    .trust p {
-        font-size: 0.9rem;
-    }
-}
-
-/* --- Banner Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        padding: 10% 2%;
-        margin: 10% 4% 1% 4%;
-        line-height: 1.5;
-    }
-
-    .banner h1 {
-        font-size: 2rem;
-    }
-
-    .symbol {
-        font-size: 3rem;
-    }
-}
-
-/* --- Menu Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    .menu {
-        padding: 80px 0;
-    }
-
-    .menu h1 {
-        font-size: 2.5rem;
-    }
-
-    .menu h4 {
-        font-size: 1.25rem;
-        text-wrap: nowrap;
-    }
-
-    .menu-box {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-cart {
-        width: 95%;
-        height: 520px;        
-    }
-
-    .menu-image {
-        width: 300px;
-        height: 245px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-}
-
-/* -----------Special Section Media Queries----------- */
-
-@media screen and (max-width: 768px) {
-    .special {
-        padding: 0px 1%;
-    }
-
-    .special h1 {
-        font-size: 2.5rem;              /* Reduce the heading size */
-        margin-bottom: 2rem;
-    }
-
-    .image-box {
-        grid-template-columns: 1fr;    /* Single column layout */
-    }
-
-    .special-image {
-        margin: 10px auto;           /* Center the items with auto margins */
-        width: 100%;                /* Make each item take up more width */
-        height: 450px;              /* Set a fixed height for all special-image divs */
-        display: flex;
-        flex-direction: column;     /* Change to column layout */
-        position: relative;         /* Ensure position relative for absolute child positioning */
-    }
-
-    .special-image img {
-        height: 250px;              /* Fixed height for all images */
-        width: 100%;
-        object-fit: cover;          /* Ensure proper image scaling */
-        object-position: center;
-    }
-
-    .special-image h3 {
-        font-size: 1.5rem;         /* Reduce the sub-heading size */
-        margin-bottom: 60px;
-        position: absolute;
-        top: 100px;                 /* Position from top */
-        text-shadow: #FC0 1px 0 10px;
-    }
-
-    .special-image p {
-        width: 88%;                 /* Adjust paragraph width */
-        font-size: 0.9rem;         /* Reduce paragraph font size */
-        margin-top: 75px;
-        text-align: justify;
-        padding: 0 10px;         /* Add some padding for better readability */
-        position: absolute;
-        top: 80px;              /* Position from top */
-    }
-
-    .special-btn {
-        margin-top: 280px;              /* Adjust button position */
-        padding: 5px 15px;
-        position: absolute;
-        bottom: 85px;                   /* Position from bottom instead of using margin-top */
-        left: 50%;
-        transform: translateX(-50%);    /* Center horizontally */
-    }
-
-    .special-btn a {
-        font-size: 0.9rem;              /* Reduce button text size */
-    }
-
-    /* Make sure all hover states are visible on mobile */
-    .special-image h3,
-    .special-image p,
-    .special-btn {
-        opacity: 1;                     /* Always visible on mobile */
-    }
-    
-    .special-image img {
-        opacity: 0.2;                   /* Make all images semi-transparent for mobile */
-    }
-}
-
-/* --- Review Section Media Queries --- */
-
-@media screen and (max-width: 768px) {
-    .review {
-        margin-top: 30px;                   /* Adjusted top margin */
-        margin-bottom: 20px;                /* Adjusted bottom margin */
-        padding: 0.5rem;                    /* Reduced padding */
-    }
-
-    .review .header h1 {
-        font-size: 2.2rem;                   /* Reduced heading size */
-        margin-bottom: 1.5rem;              /* Reduced bottom margin */
-    }
-
-    .testimonials {
-        width: 100%;                        /* Take full width */
-        margin: 20px 0;                     /* Adjusted margins */
-        display: block;                     /* Change display to block */
-
-    }
-
-    .card {
-        width: 100%;                        /* Full width for cards */
-        height: auto;                       /* Allow height to adjust */
-        padding: 15px;                      /* Reduced padding */
-        margin-bottom: 25px;                /* Spacing between cards */
-
-    }
-
-    .card p {
-        font-size: 0.9rem;                  /* Reduced paragraph font size */
-        margin-bottom: 15px;                /* Adjusted bottom margin */
-        text-align: left;                   /* Aligned text to the left */
-
-    }
-
-    .card hr {
-        width: 80%;                         /* Wider hr */
-        margin-bottom: 15px;                /* Adjusted bottom margin */
-    }
-
-    .card img {
-        width: 60px;                        /* Smaller image */
-        height: 60px;                       /* Smaller image */
-        margin-bottom: 8px;                  /* Adjusted bottom margin */
-    }
-
-    .name {
-        font-size: 1rem;                    /* Reduced name font size */
-        white-space: nowrap;                /* Prevent wrapping */
-        overflow: hidden;                   /* Hide overflow */
-        text-overflow: ellipsis;            /* Ellipsis for overflow */
-    }
-
-    .more-reviews {
-        margin-top: 40px;                   /* Adjusted top margin */       
-        font-size: 1.1rem;                  /* Reduced font size */        
-        margin-bottom: 25px;
-    }
-}
-
-/* ------ Navigation Bar ------------- */
-
-/* Hamburger Menu Icon (initially hidden) */
-.bar-icon {
-    display: none;
-    color: navy;
-    font-size: 25px;
-    cursor: pointer;
-    /* margin-right: 15px; */
-    margin-left: 15px;
-    transition: 0.3s;
-    /* position: absolute; */
-    position: relative;
-    order: -1;                              /* ensures it appears before logo in flex layout */
-    /* left: 165px;                         Position after the logo */
-}
-
-.bar-icon:hover {
-    color: darkgoldenrod;
-}
-
-/* Menu checkbox (for mobile toggle) */
-#menu-toggle {
-    display: none;
-}
-
-/* Media Queries for Responsive Design - Navigation Bar */
 
 /* Large tablets and small desktops */
 @media screen and (max-width: 1200px) {
@@ -1778,5 +1447,358 @@ input::placeholder {
     
     section nav ul li a {
         font-size: 18px;
+    }
+}
+
+/* ------------ Welcome Section Media Queries ------------- */
+
+@media screen and (max-width: 768px) {
+    section .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .main .main-text {
+        order: 2;                       /* Put text below image on smaller screens */
+    }
+
+    section .main .first-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    section .main .first-image img {
+        width: 90%;
+        height: auto;
+        left: 0;
+    }
+
+    section .main .main-text h1 {
+        font-size: 2rem;
+        left: 0;
+    }
+
+    section .main .main-text p {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    section .btn {        
+        padding: 10px 8px;       
+    }
+
+    section .btn {
+        margin: 20px auto;
+    }
+}
+
+/* ----------------------------------- About Section Media Queries ------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .about {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .main-about {
+        flex-direction: column;
+    }
+
+    .main-about .image img {
+        width: 90%;
+        height: auto;
+        top: 0;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
+    .text-about {
+        order: 2;
+        padding: 20px;
+    }
+
+    .text-about h1 {
+        font-size: 50px;
+    }    
+
+    .text-about p {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        text-align: justify;
+        font-size:  105%
+    }
+
+    section .btn a {        
+        font-size: 18px;
+    }
+}
+
+/* ------------------------------------ Animation Section Media Queries -------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .trust {
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 4% 0 4%;
+        padding: 10%;
+        overflow: hidden;
+    }
+
+    .trust div {
+        width: 85%;
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+
+    .trust h3 {
+        font-size: 1rem;
+    }
+    
+    .trust i {
+        font-size: 1rem;
+    }
+    
+    .trust p {
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------------------------------- Banner Section Media Queries ----------------------- */
+
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        padding: 10% 2%;
+        margin: 10% 4% 1% 4%;
+        line-height: 1.5;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .symbol {
+        font-size: 3rem;
+    }
+}
+
+/* ------------------------------------------ Menu Section Media Queries -------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 80px 0;
+    }
+
+    .menu h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu h4 {
+        font-size: 1.25rem;
+        text-wrap: nowrap;
+    }
+
+    .menu-box {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-cart {
+        width: 95%;
+        height: 520px;        
+    }
+
+    .menu-image {
+        width: 300px;
+        height: 245px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+/* ---------------------------------- Special Section Media Queries ----------------------------- */
+
+@media screen and (max-width: 768px) {
+    .special {
+        padding: 0px 1%;
+    }
+
+    .special h1 {
+        font-size: 2.5rem;              /* Reduce the heading size */
+        margin-bottom: 2rem;
+    }
+
+    .image-box {
+        grid-template-columns: 1fr;    /* Single column layout */
+    }
+
+    .special-image {
+        margin: 10px auto;           /* Center the items with auto margins */
+        width: 100%;                /* Make each item take up more width */
+        height: 450px;              /* Set a fixed height for all special-image divs */
+        display: flex;
+        flex-direction: column;     /* Change to column layout */
+        position: relative;         /* Ensure position relative for absolute child positioning */
+    }
+
+    .special-image img {
+        height: 250px;              /* Fixed height for all images */
+        width: 100%;
+        object-fit: cover;          /* Ensure proper image scaling */
+        object-position: center;
+    }
+
+    .special-image h3 {
+        font-size: 1.5rem;         /* Reduce the sub-heading size */
+        margin-bottom: 60px;
+        position: absolute;
+        top: 100px;                 /* Position from top */
+        text-shadow: #FC0 1px 0 10px;
+    }
+
+    .special-image p {
+        width: 88%;                 /* Adjust paragraph width */
+        font-size: 0.9rem;         /* Reduce paragraph font size */
+        margin-top: 75px;
+        text-align: justify;
+        padding: 0 10px;         /* Add some padding for better readability */
+        position: absolute;
+        top: 80px;              /* Position from top */
+    }
+
+    .special-btn {
+        margin-top: 280px;              /* Adjust button position */
+        padding: 5px 15px;
+        position: absolute;
+        bottom: 85px;                   /* Position from bottom instead of using margin-top */
+        left: 50%;
+        transform: translateX(-50%);    /* Center horizontally */
+    }
+
+    .special-btn a {
+        font-size: 0.9rem;              /* Reduce button text size */
+    }
+
+    /* Make sure all hover states are visible on mobile */
+    .special-image h3,
+    .special-image p,
+    .special-btn {
+        opacity: 1;                     /* Always visible on mobile */
+    }
+    
+    .special-image img {
+        opacity: 0.2;                   /* Make all images semi-transparent for mobile */
+    }
+}
+
+/* --------------------------------------- Review Section Media Queries -------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .review {
+        margin-top: 30px;                   /* Adjusted top margin */
+        margin-bottom: 20px;                /* Adjusted bottom margin */
+        padding: 0.5rem;                    /* Reduced padding */
+    }
+
+    .review .header h1 {
+        font-size: 2.2rem;                   /* Reduced heading size */
+        margin-bottom: 1.5rem;              /* Reduced bottom margin */
+    }
+
+    .testimonials {
+        width: 100%;                        /* Take full width */
+        margin: 20px 0;                     /* Adjusted margins */
+        display: block;                     /* Change display to block */
+
+    }
+
+    .card {
+        width: 100%;                        /* Full width for cards */
+        height: auto;                       /* Allow height to adjust */
+        padding: 15px;                      /* Reduced padding */
+        margin-bottom: 25px;                /* Spacing between cards */
+
+    }
+
+    .card p {
+        font-size: 0.9rem;                  /* Reduced paragraph font size */
+        margin-bottom: 15px;                /* Adjusted bottom margin */
+        text-align: left;                   /* Aligned text to the left */
+
+    }
+
+    .card hr {
+        width: 80%;                         /* Wider hr */
+        margin-bottom: 15px;                /* Adjusted bottom margin */
+    }
+
+    .card img {
+        width: 60px;                        /* Smaller image */
+        height: 60px;                       /* Smaller image */
+        margin-bottom: 8px;                  /* Adjusted bottom margin */
+    }
+
+    .name {
+        font-size: 1rem;                    /* Reduced name font size */
+        white-space: nowrap;                /* Prevent wrapping */
+        overflow: hidden;                   /* Hide overflow */
+        text-overflow: ellipsis;            /* Ellipsis for overflow */
+    }
+
+    .more-reviews {
+        margin-top: 40px;                   /* Adjusted top margin */       
+        font-size: 1.1rem;                  /* Reduced font size */        
+        margin-bottom: 25px;
+    }
+}
+
+/* ----------------------- Footer Section Media Queries -------------------------- */
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 1px;
+    }
+
+    .footer-section {
+        width: 100%;                /* Full width on small screens */
+        margin-bottom: 5px;
+        margin-right: 0;            /* Reset margins */
+    }
+
+    .about-section, .contact {
+        text-align: center;         /* Center the about section on small screens */
+    }
+
+    .links, .newsletter  {
+        display: none;              /* Hide quick links on smaller screens */
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);         /* Center the underline on small screens */
+    }
+
+    .links ul li {
+        margin-bottom: 8px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+}
+
+/* Optional: Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .whatsapp-chat {
+        bottom: 98px;
+        right: 10px;
+        padding: 10px;              /* Further reduced padding for small screens */
+    }
+
+    .whatsapp-chat i {
+        font-size: 20px;
     }
 }
