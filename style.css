@@ -94,7 +94,7 @@ section nav .icon i:hover {
     color: darkgoldenrod;
 }
 
-/* ---- Navigation Bar --- CSS Pop-up Sign In Form ----- */
+/* --------------- Nav Bar -- User Icon --- CSS Pop-up Sign In Form --------------- */
 
 /* ---- Change user icon to be container and clickable --- */
 section nav .icon .fa-user {
@@ -190,7 +190,7 @@ section nav .icon .fa-user {
     display: block;
     margin-bottom: 8px;
     color: navy;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -249,12 +249,13 @@ section nav .icon .fa-user {
     color: bisque;
     border: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 500;
     margin-top: 23px;
+    letter-spacing: 0.5px;
 }
 
 .signin-btn:hover {
@@ -288,7 +289,9 @@ section nav .icon .fa-user {
     text-decoration: underline;
 }
 
-/* -------------- Hamburger Menu Icon (initially hidden) ---------------- */
+/* ------ Completed -- Nav Bar -- User Icon -- CSS Pop-up Sign In Form ------ */
+
+/* -------------- Hamburger Menu Icon (initially hidden) --------------- */
 .bar-icon {
     display: none;
     color: navy;
@@ -312,7 +315,7 @@ section nav .icon .fa-user {
     display: none;
 }
 
-/* ------ Main Welcome Section ---------- */
+/* ---------------- Section -- .main -- Welcome Section -------------------- */
 
 section .main {
     display: flex;
@@ -1180,94 +1183,7 @@ input::placeholder {
 
 /* --------------- Media Queries ---------------- */
 
-/* --------------- Navigation Bar ----------------- */
-
-@media screen and (max-width: 768px) {
-
-    section nav {
-        /*height: auto;                   Allow height to adjust */
-        height: 100px;
-        padding: 12px 0;                 /* Reduced vertical padding */
-    }
-
-    section nav .logo img {
-        width: 80px;
-        height: 80px;
-        margin-left: 1.5px;             /* Reduced left margin */
-    }
-
-    section nav ul {
-        /* Keep flex-direction: row; for horizontal */
-        margin: 0 0.2rem;               /* Reduced horizontal margin */
-        padding: 0;
-    }
-
-    section nav ul li {
-        margin: 0 2px;                  /* Reduced horizontal spacing between items */
-    }
-
-    section nav ul li a {
-        font-size: 14px;                /* Smaller font size for menu items */
-    }
-
-    section nav .icon {
-        margin-right: 1.5px;                    /* Reduced right margin */
-    }
-
-    section nav .icon i {
-        font-size: 16px;                        /* Smaller icon size */
-        margin: 0 3px;                          /* Reduced horizontal spacing for icons */
-    }
-
-    .form-options {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .remember-me {
-        margin-bottom: 16px;
-        margin-top: 18px;
-    }
-
-    .forgot-password {
-        margin-bottom: 5px;
-    }
-}
-
-@media screen and (max-width: 348px) {    
-    section nav {
-        height: 100px;     
-        padding: 10px 0; 
-    }
-    
-    section nav .logo img {
-        width: 80px;
-        height: 80px;
-    }    
-}
-
-/* ------------ Sign In Form Navigation Bar ------------- */
-
-@media screen and (max-width: 480px) {
-    .popup-content {
-        padding: 15px;
-    }
-
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;        
-    }   
-
-    .forgot-password {
-        margin-left: 70px;
-    }
-
-    .remember-me {
-        margin-bottom: 11px;
-        margin-top: 16px;
-        margin-left: 70px;
-    }
-}
+/* --------------- Navigation Bar ----------------- */    
 
 /* Large tablets and small desktops */
 @media screen and (max-width: 1200px) {
@@ -1329,7 +1245,8 @@ input::placeholder {
         margin: 0;
         width: 65px;
         height: 65px;
-    }
+        /* margin-left: 1.5px; */
+    }   
     
     section nav .icon {
         margin-right: 1rem;
@@ -1338,7 +1255,7 @@ input::placeholder {
     section nav .icon i {
         font-size: 22px;
         margin: 0 8px;
-    }
+    }    
     
     /* Style the mobile menu */
     section nav ul {
@@ -1373,6 +1290,20 @@ input::placeholder {
     .popup-content {
         width: 90%;
         padding: 20px;
+    }    
+
+    .form-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .remember-me {
+        margin-bottom: 16px;
+        margin-top: 18px;
+    }
+
+    .forgot-password {
+        margin-bottom: 5px;
     }
 }
 
@@ -1428,6 +1359,29 @@ input::placeholder {
     }
 }
 
+/* ------------ Sign In Form Navigation Bar ------------- */
+
+@media screen and (max-width: 480px) {
+    .popup-content {
+        padding: 15px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;        
+    }   
+
+    .forgot-password {
+        margin-left: 70px;
+    }
+
+    .remember-me {
+        margin-bottom: 11px;
+        margin-top: 16px;
+        margin-left: 70px;
+    }
+}
+
 /* Very small phones */
 @media screen and (max-width: 375px) {
     section nav .icon i:not(.fa-user):not(.bar-icon) {
@@ -1448,6 +1402,18 @@ input::placeholder {
     section nav ul li a {
         font-size: 18px;
     }
+}
+
+@media screen and (max-width: 348px) {    
+    section nav {
+        height: 100px;     
+        padding: 10px 0; 
+    }
+    
+    section nav .logo img {
+        width: 80px;
+        height: 80px;
+    }    
 }
 
 /* ------------ Welcome Section Media Queries ------------- */
@@ -1592,11 +1558,11 @@ input::placeholder {
     }
 
     .menu h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .menu h4 {
-        font-size: 1.25rem;
+        font-size: 2rem;
         text-wrap: nowrap;
     }
 
@@ -1605,12 +1571,26 @@ input::placeholder {
     }
 
     .menu-cart {
-        width: 95%;
+        width: 85%;
         height: 520px;        
     }
 
     .menu-image {
         width: 300px;
+        height: 245px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 450px) {
+     .menu-cart {
+        width: 80%;
+        height: 520px;        
+    }
+
+    .menu-image {
+        width: 220px;
         height: 245px;
         margin: 0 auto;
         overflow: hidden;
