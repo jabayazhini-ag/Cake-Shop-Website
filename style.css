@@ -1181,604 +1181,883 @@ input::placeholder {
 
 /* ------------------------------------------------------------------------------------------------------------- */
 
-/* --------------- Media Queries ---------------- */
+/* --------------- Media Queries for Responsiveness ---------------- */
 
-/* --------------- Navigation Bar ----------------- */    
+/* ----------------------- 1024px - Laptop Screens ----------------------- */
+@media screen and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden; /* prevents horizontal scrolling */
+    }
 
-/* Large tablets and small desktops */
-@media screen and (max-width: 1200px) {
+    /* Navigation Bar */
     section nav .logo img {
-        margin-left: 3rem;
+        margin-left: 5rem;
     }
-    
-    section nav .icon {
-        margin-right: 3rem;
-    }
-    
+
     section nav ul li a {
         font-size: 18px;
     }
-}
 
-/* Tablets */
-@media screen and (max-width: 992px) {
-    section nav .logo img {
-        margin-left: 2rem;
-        width: 75px;
-        height: 75px;
-    }
-    
     section nav .icon {
-        margin-right: 2rem;
-    }
-    
-    section nav ul li {
-        margin: 0 5px;
-    }
-    
-    section nav ul li a {
-        font-size: 16px;
-    }
-    
-    section nav {
-        height: 85px;
-    }
-}
-
-/* Small tablets and large phones */
-@media screen and (max-width: 768px) {
-    section nav .icon i:not(.fa-user):not(.bar-icon) {
-        display: none;
+        margin-right: 5rem;
     }
 
-    /* Show hamburger menu and hide regular nav items */
-    .bar-icon {
-        display: block;
-    }
-    
-    section nav {
-        padding: 0 1.5rem;
-        height: 75px;
-    }
-    
-    section nav .logo img {
-        margin: 0;
-        width: 65px;
-        height: 65px;
-        /* margin-left: 1.5px; */
-    }   
-    
-    section nav .icon {
-        margin-right: 1rem;
-    }
-    
-    section nav .icon i {
-        font-size: 22px;
-        margin: 0 8px;
-    }    
-    
-    /* Style the mobile menu */
-    section nav ul {
-        position: fixed;
-        top: 75px;
-        left: -100%;
-        background-color: white;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        transition: 0.5s ease-in-out;
-        z-index: 999;
-    }
-    
-    /* When menu is open */
-    #menu-toggle:checked ~ ul {
-        left: 0;
-    }
-    
-    section nav ul li {
-        margin: 15px 0;
-    }
-    
-    section nav ul li a {
-        font-size: 20px;
-    }
-    
-    /* Adjust sign-in popup for mobile */
-    .popup-content {
-        width: 90%;
-        padding: 20px;
-    }    
-
-    .form-options {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .remember-me {
-        margin-bottom: 16px;
-        margin-top: 18px;
-    }
-
-    .forgot-password {
-        margin-bottom: 5px;
-    }
-}
-
-/* Mobile phones */
-@media screen and (max-width: 576px) {
-    section nav {
-        height: 65px;
-        padding: 0 1rem;
-    }
-    
-    section nav .logo img {
-        width: 55px;
-        height: 55px;
-    }
-    
-    section nav ul {
-        top: 65px;
-    }
-    
-    section nav .icon {
-        margin-right: 0.5rem;
-    }
-    
-    section nav .icon i {
-        font-size: 20px;
-        margin: 0 5px;
-    }
-    
-    /* Adjust form elements for smaller screens */
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .forgot-password {
-        margin-top: 14px;
-    }
-    
-    .popup-content h2 {
-        font-size: 20px;
-    }
-    
-    .form-group label {
-        font-size: 16px;
-    }
-    
-    .signin-btn {
-        font-size: 16px;
-    }
-
-    .signup-link p {
-        font-size: 15px;
-    }
-}
-
-/* ------------ Sign In Form Navigation Bar ------------- */
-
-@media screen and (max-width: 480px) {
-    .popup-content {
-        padding: 15px;
-    }
-
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;        
-    }   
-
-    .forgot-password {
-        margin-left: 70px;
-    }
-
-    .remember-me {
-        margin-bottom: 11px;
-        margin-top: 16px;
-        margin-left: 70px;
-    }
-}
-
-/* Very small phones */
-@media screen and (max-width: 375px) {
-    section nav .icon i:not(.fa-user):not(.bar-icon) {
-        display: none;
-    }
-    
-    section nav .logo img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    /* Show only user icon and cart icon on very small screens */
-    section nav .icon i.fa-user,
-    section nav .icon i.fa-cart-shopping {
-        display: inline-block;
-    }
-    
-    section nav ul li a {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 348px) {    
-    section nav {
-        height: 100px;     
-        padding: 10px 0; 
-    }
-    
-    section nav .logo img {
-        width: 80px;
-        height: 80px;
-    }    
-}
-
-/* ------------ Welcome Section Media Queries ------------- */
-
-@media screen and (max-width: 768px) {
+    /* Welcome Section */
     section .main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    section .main .main-text {
-        order: 2;                       /* Put text below image on smaller screens */
-    }
-
-    section .main .first-image {
-        order: 1;
-        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     section .main .first-image img {
-        width: 90%;
-        height: auto;
-        left: 0;
+        width: 550px;
+        height: 550px;
+        left: 20px;
     }
 
     section .main .main-text h1 {
-        font-size: 2rem;
-        left: 0;
+        font-size: 45px;
+        line-height: 50px;
     }
 
-    section .main .main-text p {
-        width: 90%;
-        margin: 20px auto;
-        font-size: 20px;
+    section .main .main-text h1 span {
+        font-size: 50px;
     }
 
-    section .btn {        
-        padding: 10px 8px;       
+    section .main-text p {
+        width: 500px;
+        font-size: 135%;
+        left: 30px;
+        margin-top: 30px;
     }
 
     section .btn {
-        margin: 20px auto;
-    }
-}
-
-/* ----------------------------------- About Section Media Queries ------------------------------- */
-
-@media screen and (max-width: 768px) {
-    .about {
-        height: auto;
-        padding: 20px 0;
+        margin-left: 70px;
+        margin-top: 30px;
     }
 
-    .main-about {
-        flex-direction: column;
+    section .btn a {       
+        font-size: 18px;
     }
 
+    /* About Section */
     .main-about .image img {
-        width: 90%;
-        height: auto;
-        top: 0;
-        margin-top: 60px;
-        margin-bottom: 10px;
-    }
-
-    .text-about {
-        order: 2;
-        padding: 20px;
+        width: 400px;
+        height: 650px;
+        top: 3px;
     }
 
     .text-about h1 {
-        font-size: 50px;
-    }    
+        font-size: 55px;
+    }
+
+    .text-about h3 {
+        margin: 0 0 30px 0;
+    }
 
     .text-about p {
-        width: 100%;
-        margin-right: 0;
-        margin-top: 10px;
-        text-align: justify;
-        font-size:  105%
+        width: 540px;
+        font-size: 100%;
+        margin-right: 5px;
     }
 
-    section .btn a {        
-        font-size: 18px;
-    }
-}
-
-/* ------------------------------------ Animation Section Media Queries -------------------------------- */
-
-@media screen and (max-width: 768px) {
+    /* Animation Section */
     .trust {
-        flex-direction: column;
-        align-items: center;
-        margin: 10% 4% 0 4%;
-        padding: 10%;
+        padding: 5%;
+        gap: 3%;
         overflow: hidden;
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
-    .trust div {
-        width: 85%;
-        margin-bottom: 35px;
-        margin-top: 35px;
-    }
-
-    .trust h3 {
-        font-size: 1rem;
-    }
-    
-    .trust i {
-        font-size: 1rem;
-    }
-    
-    .trust p {
-        font-size: 0.9rem;
-    }
-}
-
-/* --------------------------------------------- Banner Section Media Queries ----------------------- */
-
-@media screen and (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        padding: 10% 2%;
-        margin: 10% 4% 1% 4%;
-        line-height: 1.5;
+    /* Banner Section */
+    .banner {       
+        margin: 8% 4% 1px 4%;
     }
 
     .banner h1 {
-        font-size: 2rem;
+        font-size: 70px;
     }
 
     .symbol {
-        font-size: 3rem;
+        font-size: 70px;
     }
-}
 
-/* ------------------------------------------ Menu Section Media Queries -------------------------------- */
-
-@media screen and (max-width: 768px) {
-    .menu {
-        padding: 80px 0;
+    /* Menu Section */
+    .menu {        
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .menu h1 {
-        font-size: 3.5rem;
+        font-size: 50px;
     }
 
     .menu h4 {
-        font-size: 2rem;
-        text-wrap: nowrap;
+        font-size: 40px;
     }
 
     .menu-box {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+        grid-gap: 15px;
+        justify-content: center;
     }
 
     .menu-cart {
-        width: 85%;
-        height: 520px;        
+        width: 100%; /* Adjust width to fit grid */
+        margin: 28px auto 15px auto; /* Center cards */
+        width: 325px;
+        height: 500px;
     }
 
-    .menu-image {
-        width: 300px;
-        height: 245px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 450px) {
-     .menu-cart {
-        width: 80%;
-        height: 520px;        
-    }
-
-    .menu-image {
-        width: 220px;
-        height: 245px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-}
-
-/* ---------------------------------- Special Section Media Queries ----------------------------- */
-
-@media screen and (max-width: 768px) {
+    /* Special Section */
     .special {
-        padding: 0px 1%;
+        margin-right: auto;
+        margin-left: auto; 
+        margin-top: 0;
     }
 
     .special h1 {
-        font-size: 2.5rem;              /* Reduce the heading size */
-        margin-bottom: 2rem;
+        font-size: 50px;
     }
 
     .image-box {
-        grid-template-columns: 1fr;    /* Single column layout */
-    }
-
-    .special-image {
-        margin: 10px auto;           /* Center the items with auto margins */
-        width: 100%;                /* Make each item take up more width */
-        height: 450px;              /* Set a fixed height for all special-image divs */
-        display: flex;
-        flex-direction: column;     /* Change to column layout */
-        position: relative;         /* Ensure position relative for absolute child positioning */
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        grid-gap: 20px;
     }
 
     .special-image img {
-        height: 250px;              /* Fixed height for all images */
-        width: 100%;
-        object-fit: cover;          /* Ensure proper image scaling */
-        object-position: center;
+        opacity: 0.3;
     }
 
     .special-image h3 {
-        font-size: 1.5rem;         /* Reduce the sub-heading size */
-        margin-bottom: 60px;
-        position: absolute;
-        top: 100px;                 /* Position from top */
+        opacity: 1;
         text-shadow: #FC0 1px 0 10px;
     }
 
     .special-image p {
-        width: 88%;                 /* Adjust paragraph width */
-        font-size: 0.9rem;         /* Reduce paragraph font size */
-        margin-top: 75px;
-        text-align: justify;
-        padding: 0 10px;         /* Add some padding for better readability */
-        position: absolute;
-        top: 80px;              /* Position from top */
+        opacity: 1;
     }
 
     .special-btn {
-        margin-top: 280px;              /* Adjust button position */
-        padding: 5px 15px;
-        position: absolute;
-        bottom: 85px;                   /* Position from bottom instead of using margin-top */
-        left: 50%;
-        transform: translateX(-50%);    /* Center horizontally */
-    }
+        opacity: 1;
+        box-shadow: 0 0 3px 2px rgba(184, 135, 11, 0.732);
+        transform: translateY(0);
+    }   
 
-    .special-btn a {
-        font-size: 0.9rem;              /* Reduce button text size */
-    }
-
-    /* Make sure all hover states are visible on mobile */
-    .special-image h3,
-    .special-image p,
-    .special-btn {
-        opacity: 1;                     /* Always visible on mobile */
-    }
-    
-    .special-image img {
-        opacity: 0.2;                   /* Make all images semi-transparent for mobile */
-    }
-}
-
-/* --------------------------------------- Review Section Media Queries -------------------------------- */
-
-@media screen and (max-width: 768px) {
+    /* Review Section */
     .review {
-        margin-top: 30px;                   /* Adjusted top margin */
-        margin-bottom: 20px;                /* Adjusted bottom margin */
-        padding: 0.5rem;                    /* Reduced padding */
+        margin-top: 48px;
     }
 
-    .review .header h1 {
-        font-size: 2.2rem;                   /* Reduced heading size */
-        margin-bottom: 1.5rem;              /* Reduced bottom margin */
+    .header h1 {
+        font-size: 50px;
     }
 
     .testimonials {
-        width: 100%;                        /* Take full width */
-        margin: 20px 0;                     /* Adjusted margins */
-        display: block;                     /* Change display to block */
-
-    }
-
-    .card {
-        width: 100%;                        /* Full width for cards */
-        height: auto;                       /* Allow height to adjust */
-        padding: 15px;                      /* Reduced padding */
-        margin-bottom: 25px;                /* Spacing between cards */
-
-    }
-
-    .card p {
-        font-size: 0.9rem;                  /* Reduced paragraph font size */
-        margin-bottom: 15px;                /* Adjusted bottom margin */
-        text-align: left;                   /* Aligned text to the left */
-
-    }
-
-    .card hr {
-        width: 80%;                         /* Wider hr */
-        margin-bottom: 15px;                /* Adjusted bottom margin */
-    }
-
-    .card img {
-        width: 60px;                        /* Smaller image */
-        height: 60px;                       /* Smaller image */
-        margin-bottom: 8px;                  /* Adjusted bottom margin */
-    }
-
-    .name {
-        font-size: 1rem;                    /* Reduced name font size */
-        white-space: nowrap;                /* Prevent wrapping */
-        overflow: hidden;                   /* Hide overflow */
-        text-overflow: ellipsis;            /* Ellipsis for overflow */
+        width: 70%; 
+        margin: 15px 1%;
     }
 
     .more-reviews {
-        margin-top: 40px;                   /* Adjusted top margin */       
-        font-size: 1.1rem;                  /* Reduced font size */        
-        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    /* Marquee Tag */
+    .marquee-container {
+        font-size: 16.5px; /* Adjust font size for larger screens */
+    }
+
+    /* Footer Section */
+    .footer-section h3 {    
+        font-size: 20px;   
+    }
+
+    .whatsapp-chat {    
+        bottom: 40px;
+        right: 15px;   
+        padding: 12px;                      /* Reduced padding */    
     }
 }
 
-/* ----------------------- Footer Section Media Queries -------------------------- */
-
+/* ----------------------- 768px - Tablet Screens ----------------------- */
 @media screen and (max-width: 768px) {
+    /* Navigation Bar */
+    section nav {
+        flex-wrap: wrap; /* Allow items to wrap */
+        height: auto; /* Auto height for wrapping content */
+        padding: 15px 0;
+        justify-content: space-between; /* Space out logo and icons */
+    }
+
+    section nav .logo {
+        order: 1; /* Keep logo first */
+    }
+
+    section nav .logo img {
+        margin: 0 0 0 15px; /* Adjust margin for mobile */
+    }
+
+    section nav .icon {
+        order: 2; /* Keep icons second */
+        margin-right: 15px; /* Adjust margin for mobile */
+    }
+
+    /* Hide all icons except the user icon */
+    section nav .icon i {
+        display: none;
+    }
+
+    section nav .icon .fa-user { /* Target the user icon specifically */
+        display: block; /* Or inline-block, depending on original display */
+    }
+
+    section nav ul {
+        display: none; /* Hide main navigation by default */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for the dropdown menu */
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 97px; /* Position below navbar */
+        left: 0;
+        z-index: 999;
+        padding: 15px 0;
+    }
+
+    section nav ul li {
+        margin: 10px 0;
+    }
+
+    section nav ul li a {
+        font-size: 20px;
+    }
+
+    /* Hamburger Menu */
+    .bar-icon {
+        display: block; /* Show hamburger icon */
+        order: 0; /* Place before logo */
+        margin-left: 15px;
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex; /* Show navigation when checkbox is checked */
+    }
+
+    /* Home Section */
+    section .main {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        top: 60px; /* Adjust top position */
+    }
+
+    section .main .main-text {
+        padding: 0 20px;
+    }
+
+    section .main .main-text h1 {
+        font-size: 40px;
+        line-height: 45px;
+        left: 0; /* Reset left positioning */
+        margin-top: 20px;
+    }
+
+    section .main .main-text h1 span {
+        font-size: 50px;
+    }
+
+    section .main-text p {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 30px auto; /* Center paragraph */
+        font-size: 120%;
+    }
+
+    section .btn {
+        margin: 30px auto; /* Center button */
+    }
+
+    section .main .first-image img {
+        width: 90%; /* Make image responsive */
+        height: auto;
+        left: 0; /* Reset left positioning */
+        margin-top: 30px;
+    }
+
+    /* About Section */
+    .main-about {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .main-about .image img {
+        width: 90%; /* Make image responsive */
+        height: auto;
+    }
+
+    .text-about {
+        padding: 0 20px;
+    }
+
+    .text-about p {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 8px auto; /* Center paragraph */
+    }
+
+    /* Trust Section */
+    .trust {
+        flex-direction: column; /* Stack elements vertically */
+        margin: 5% 2%;
+        gap: 20px;
+    }
+
+    .trust div {
+        flex: none; /* Remove flex sizing */
+        width: 80%; /* Set explicit width */
+        margin: 0 auto; /* Center the divs */
+        padding: 5%;
+    }
+
+    /* Banner Section */
+    .banner {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 15px;
+        padding: 10% 2%;
+        margin: 5% 2% 1% 2%;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .symbol {
+        font-size: 50px;
+    }
+
+    /* Menu Section */
+    .menu h1 {
+        font-size: 50px;
+    }
+
+    .menu h4 {
+        font-size: 35px;
+    }
+
+    .menu-box {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+
+    /* Special Section */
+    .special h1 {
+        font-size: 50px;
+    }
+
+    .image-box {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .special-image p {
+        width: 80%; /* Adjust width */
+        font-size: 17px;
+    }
+
+    /* Review Section */
+    .review {
+        margin-top: 30px;
+        padding: 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        width: 95%; /* Full width for testimonials */
+        display: block; /* Stack them vertically */
+        margin: 15px auto; /* Center them */
+    }
+
+    .card {
+        height: auto; /* Allow height to adjust */
+        min-height: 300px; /* Ensure minimum height */
+    }
+
+    .more-reviews {
+        margin-top: 30px;
+        font-size: 1.05rem;
+    }
+
+    /* Footer Section (Existing, but check for conflicts/enhancements) */
     .footer-content {
-        display: block;
+        display: block; /* Stack footer sections */
         margin-bottom: 30px;
         margin-top: 1px;
     }
 
     .footer-section {
-        width: 100%;                /* Full width on small screens */
-        margin-bottom: 5px;
-        margin-right: 0;            /* Reset margins */
-    }
-
-    .about-section, .contact {
-        text-align: center;         /* Center the about section on small screens */
-    }
-
-    .links, .newsletter  {
-        display: none;              /* Hide quick links on smaller screens */
+        width: 90%; /* Adjust width */
+        margin: 0 auto 20px auto; /* Center and add space */
+        text-align: center; /* Center text in sections */
     }
 
     .footer-section h3::after {
         left: 50%;
-        transform: translateX(-50%);         /* Center the underline on small screens */
+        transform: translateX(-50%); /* Center the underline */
     }
 
-    .links ul li {
-        margin-bottom: 8px;
-    }
-
-    .contact-info p {
-        margin-bottom: 10px;
+    .links, .newsletter  {
+        display: block; /* Re-show quick links on tablets, adjust as needed */
     }
 }
 
-/* Optional: Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .whatsapp-chat {
-        bottom: 98px;
-        right: 10px;
-        padding: 10px;              /* Further reduced padding for small screens */
+/* ----------------------- 425px - Mobile Large Screens ----------------------- */
+@media screen and (max-width: 425px) {
+    /* Navigation Bar */
+    section nav .logo img {
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
     }
 
-    .whatsapp-chat i {
+    section nav .icon {
+        margin-right: 10px;
+    }
+
+    section nav .icon i {
+        font-size: 22px;
+        margin: 0 8px;
+    }
+
+    .bar-icon {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    section nav ul {
+        top: 80px; /* Adjust dropdown position */
+    }
+
+    /* Home Section */
+    section .main {
+        top: 50px;
+    }
+
+    section .main .main-text h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    section .main .main-text h1 span {
+        font-size: 45px;
+    }
+
+    section .main-text p {
+        font-size: 100%;
+        width: 95%;
+    }
+
+    section .btn {
+        padding: 8px 20px;
+        width: 160px;
+    }
+
+    section .btn a {
+        font-size: 18px;
+    }
+
+    /* About Section */
+    .text-about h1 {
+        font-size: 45px;
+    }
+
+    .text-about h3 {
+        font-size: 25px;
+    }
+
+    .text-about p {
+        font-size: 100%;
+        width: 95%;
+    }
+
+    /* Trust Section */
+    .trust div {
+        width: 90%; /* Increase width for better spacing */
+        padding: 4%;
+    }
+
+    /* Banner Section */
+    .banner h1 {
+        font-size: 40px;
+        -webkit-text-stroke: 0.5px goldenrod;
+    }
+
+    .symbol {
+        font-size: 40px;
+        -webkit-text-stroke: 1px goldenrod;
+    }
+
+    /* Menu Section */
+    .menu h1 {
+        font-size: 40px;
+    }
+
+    .menu h4 {
+        font-size: 30px;
+    }
+
+    .menu-box {
+        grid-template-columns: 1fr; /* Single column for mobile large */
+        grid-gap: 10px;
+    }
+
+    .menu-cart {
+        max-width: 300px; /* Further restrict max-width */
+        height: auto; /* Allow height to adjust */
+        margin: 15px auto; /* Center cards */
+        padding: 5px;
+    }
+
+    .menu-image {
+        width: 95%;
+        height: 220px;
+    }
+
+    .menu-info h2 {
         font-size: 20px;
+    }
+
+    .menu-info p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .menu-info h3 {
+        font-size: 18px;
+    }
+
+    .menu-btn a {
+        padding: 7px 10px;
+        margin: 0 60px;
+        font-size: 16px;
+    }
+
+    /* Special Section */
+    .special h1 {
+        font-size: 40px;
+    }
+
+    .special-image {
+        margin: 5px;
+    }
+
+    .special-image h3 {
+        font-size: 28px;
+        margin-bottom: 180px;
+    }
+
+    .special-image p {
+        width: 90%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .special-btn {
+        margin-top: 220px;
+        padding: 5px 20px;
+    }
+
+    /* Review Section */
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .card p {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .more-reviews {
+        font-size: 1rem;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        width: 95%;
+    }
+
+    .links, .newsletter {
+        display: none; /* Hide again for smaller mobiles if desired, based on existing logic */
+    }
+
+    .about-section, .contact {
+        text-align: center; /* Ensure centering */
+    }
+}
+
+/* ----------------------- 375px - Mobile Medium Screens ----------------------- */
+@media screen and (max-width: 375px) {
+    /* Navigation Bar */
+    section nav {
+        padding: 10px 0;
+    }
+
+    section nav .logo img {
+        width: 60px;
+        height: 60px;
+        margin-left: 5px;
+    }
+
+    section nav .icon {
+        margin-right: 5px;
+    }
+
+    section nav .icon i {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .bar-icon {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    section nav ul {
+        top: 70px; /* Adjust dropdown position */
+    }
+
+    /* Home Section */
+    section .main-text p {
+        font-size: 95%;
+        width: 95%;
+    }
+
+    section .btn {
+        width: 150px;
+        padding: 7px 18px;
+    }
+
+    section .btn a {
+        font-size: 17px;
+    }
+
+    /* About Section */
+    .text-about h1 {
+        font-size: 40px;
+    }
+
+    .text-about h3 {
+        font-size: 22px;
+    }
+
+    .text-about p {
+        font-size: 95%;
+        width: 95%;
+    }
+
+    /* Trust Section */
+    .trust div {
+        width: 95%; /* Even wider for very small screens */
+        padding: 3%;
+    }
+
+    /* Banner Section */
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .symbol {
+        font-size: 35px;
+    }
+
+    /* Menu Section */
+    .menu h1 {
+        font-size: 35px;
+    }
+
+    .menu h4 {
+        font-size: 28px;
+    }
+
+    .menu-cart {
+        max-width: 280px; /* Further restrict max-width */
+    }
+
+    .menu-btn a {
+        margin: 0 50px;
+    }
+
+    /* Special Section */
+    .special h1 {
+        font-size: 35px;
+    }
+
+    .special-image h3 {
+        font-size: 25px;
+        margin-bottom: 150px;
+    }
+
+    .special-image p {
+        font-size: 15px;
+    }
+
+    .special-btn {
+        margin-top: 180px;
+    }
+
+    /* Review Section */
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        width: 98%;
+    }
+}
+
+/* ----------------------- 320px - Mobile Small Screens ----------------------- */
+@media screen and (max-width: 320px) {
+    /* Navigation Bar */
+    section nav .logo img {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    section nav .icon {
+        margin-right: 5px;
+    }
+
+    section nav .icon i {
+        font-size: 18px;
+        margin: 0 3px;
+    }
+
+    .bar-icon {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    section nav ul {
+        top: 60px; /* Adjust dropdown position */
+    }
+
+    /* Home Section */
+    section .main-text p {
+        font-size: 90%;
+        width: 98%;
+    }
+
+    section .btn {
+        width: 140px;
+        padding: 6px 15px;
+    }
+
+    section .btn a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .text-about h1 {
+        font-size: 35px;
+    }
+
+    .text-about h3 {
+        font-size: 20px;
+    }
+
+    .text-about p {
+        font-size: 90%;
+        width: 98%;
+    }
+
+    /* Trust Section */
+    .trust {
+        margin: 3% 1%;
+    }
+
+    .trust div {
+        width: 98%;
+    }
+
+    /* Banner Section */
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .symbol {
+        font-size: 30px;
+    }
+
+    /* Menu Section */
+    .menu h1 {
+        font-size: 30px;
+    }
+
+    .menu h4 {
+        font-size: 25px;
+    }
+
+    .menu-cart {
+        max-width: 250px; /* Even smaller max-width */
+    }
+
+    .menu-image {
+        height: 200px;
+    }
+
+    .menu-info h2 {
+        font-size: 18px;
+    }
+
+    .menu-info p {
+        font-size: 13px;
+    }
+
+    .menu-info h3 {
+        font-size: 17px;
+    }
+
+    .menu-btn a {
+        margin: 0 40px;
+        font-size: 15px;
+    }
+
+    /* Special Section */
+    .special h1 {
+        font-size: 30px;
+    }
+
+    .special-image h3 {
+        font-size: 22px;
+        margin-bottom: 120px;
+    }
+
+    .special-image p {
+        font-size: 14px;
+    }
+
+    .special-btn {
+        margin-top: 150px;
+    }
+
+    /* Review Section */
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        width: 100%;
+        padding: 10px;
     }
 }
